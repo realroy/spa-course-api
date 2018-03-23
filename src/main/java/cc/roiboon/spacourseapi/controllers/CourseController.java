@@ -21,7 +21,7 @@ public class CourseController {
   }
 
   @GetMapping(BASE_URL + "/{id}")
-  public Object getById(String id) {
+  public Object getById(@PathVariable String id) {
     return service.getById(id);
   }
 
